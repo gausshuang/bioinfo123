@@ -10,7 +10,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "植物生物学"
+    "category_name": "植物生物学",
+    "resource_type": "database"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "蛋白质"
+    "category_name": "蛋白质",
+    "resource_type": "database"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "植物生物学"
+    "category_name": "植物生物学",
+    "resource_type": "database"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "蛋白质"
+    "category_name": "蛋白质",
+    "resource_type": "database"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "蛋白质"
+    "category_name": "蛋白质",
+    "resource_type": "database"
   },
   {
     "id": 8,
@@ -101,7 +108,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 9,
@@ -114,7 +122,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 10,
@@ -127,7 +136,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 11,
@@ -140,7 +150,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 12,
@@ -153,7 +164,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "蛋白质"
+    "category_name": "蛋白质",
+    "resource_type": "database"
   },
   {
     "id": 14,
@@ -179,7 +192,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 15,
@@ -192,7 +206,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 17,
@@ -218,7 +234,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 18,
@@ -231,7 +248,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 19,
@@ -244,7 +262,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 20,
@@ -257,7 +276,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 21,
@@ -270,7 +290,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 22,
@@ -283,7 +304,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 23,
@@ -296,7 +318,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 24,
@@ -309,7 +332,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 25,
@@ -322,7 +346,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 26,
@@ -335,7 +360,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 27,
@@ -348,7 +374,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 28,
@@ -361,7 +388,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "微生物学"
+    "category_name": "微生物学",
+    "resource_type": "database"
   },
   {
     "id": 29,
@@ -374,7 +402,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 30,
@@ -387,7 +416,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 31,
@@ -400,7 +430,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 32,
@@ -413,7 +444,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 33,
@@ -426,7 +458,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 34,
@@ -439,7 +472,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "植物生物学"
+    "category_name": "植物生物学",
+    "resource_type": "database"
   },
   {
     "id": 35,
@@ -452,7 +486,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 36,
@@ -465,7 +500,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 37,
@@ -478,7 +514,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 38,
@@ -491,7 +528,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 39,
@@ -504,7 +542,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 40,
@@ -517,7 +556,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 41,
@@ -530,7 +570,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 42,
@@ -543,7 +584,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 43,
@@ -556,7 +598,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 44,
@@ -569,7 +612,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 45,
@@ -582,7 +626,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "微生物学"
+    "category_name": "微生物学",
+    "resource_type": "database"
   },
   {
     "id": 46,
@@ -595,7 +640,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "微生物学"
+    "category_name": "微生物学",
+    "resource_type": "database"
   },
   {
     "id": 47,
@@ -608,7 +654,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 48,
@@ -621,7 +668,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "植物生物学"
+    "category_name": "植物生物学",
+    "resource_type": "database"
   },
   {
     "id": 49,
@@ -634,7 +682,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 50,
@@ -647,7 +696,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 51,
@@ -660,7 +710,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 52,
@@ -673,7 +724,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 53,
@@ -686,7 +738,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 54,
@@ -699,7 +752,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 55,
@@ -712,7 +766,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 56,
@@ -725,7 +780,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 57,
@@ -738,7 +794,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 58,
@@ -751,7 +808,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 59,
@@ -764,7 +822,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 60,
@@ -777,7 +836,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 61,
@@ -790,7 +850,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 62,
@@ -803,7 +864,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 63,
@@ -816,7 +878,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 64,
@@ -829,7 +892,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 65,
@@ -842,7 +906,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 66,
@@ -855,7 +920,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 67,
@@ -868,7 +934,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "组学"
+    "category_name": "组学",
+    "resource_type": "database"
   },
   {
     "id": 68,
@@ -881,7 +948,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "医学生物学"
+    "category_name": "医学生物学",
+    "resource_type": "database"
   },
   {
     "id": 69,
@@ -894,7 +962,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 70,
@@ -907,7 +976,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 71,
@@ -920,7 +990,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "进化生物学"
+    "category_name": "进化生物学",
+    "resource_type": "database"
   },
   {
     "id": 72,
@@ -933,7 +1004,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "基因组学"
+    "category_name": "基因组学",
+    "resource_type": "database"
   },
   {
     "id": 73,
@@ -946,7 +1018,8 @@
     "last_update": "",
     "access": "Free",
     "data_type": "",
-    "category_name": "生物信息工具"
+    "category_name": "生物信息工具",
+    "resource_type": "database"
   },
   {
     "id": 74,
@@ -959,7 +1032,8 @@
     "data_type": "",
     "category": "tools",
     "category_name": "生物信息工具",
-    "short_description_zh": "Natural products"
+    "short_description_zh": "Natural products",
+    "resource_type": "database"
   },
   {
     "id": 75,
@@ -972,7 +1046,8 @@
     "data_type": "",
     "category": "genomics",
     "category_name": "基因组学",
-    "short_description_zh": "Pathogen 基因组 analyses"
+    "short_description_zh": "Pathogen 基因组 analyses",
+    "resource_type": "database"
   },
   {
     "id": 76,
@@ -985,7 +1060,8 @@
     "data_type": "",
     "category": "tools",
     "category_name": "生物信息工具",
-    "short_description_zh": "功能 association networks"
+    "short_description_zh": "功能 association networks",
+    "resource_type": "database"
   },
   {
     "id": 77,
@@ -998,7 +1074,8 @@
     "data_type": "",
     "category": "genomics",
     "category_name": "基因组学",
-    "short_description_zh": "Harmonized gene-attribute associations"
+    "short_description_zh": "Harmonized gene-attribute associations",
+    "resource_type": "database"
   },
   {
     "id": 78,
@@ -1011,7 +1088,8 @@
     "data_type": "",
     "category": "protein",
     "category_name": "蛋白质",
-    "short_description_zh": "Mutual folding induced by binding"
+    "short_description_zh": "Mutual folding induced by binding",
+    "resource_type": "database"
   },
   {
     "id": 79,
@@ -1024,7 +1102,8 @@
     "data_type": "",
     "category": "protein",
     "category_name": "蛋白质",
-    "short_description_zh": "Curated taxonomy across all domains of life"
+    "short_description_zh": "Curated taxonomy across all domains of life",
+    "resource_type": "database"
   },
   {
     "id": 80,
@@ -1037,7 +1116,8 @@
     "data_type": "",
     "category": "genomics",
     "category_name": "基因组学",
-    "short_description_zh": "Origin-of-transfer regions of bacterial mobile 遗传 elements"
+    "short_description_zh": "Origin-of-transfer regions of bacterial mobile 遗传 elements",
+    "resource_type": "database"
   },
   {
     "id": 81,
@@ -1050,7 +1130,8 @@
     "data_type": "",
     "category": "plant",
     "category_name": "植物生物学",
-    "short_description_zh": "植物 metabolic 网络"
+    "short_description_zh": "植物 metabolic 网络",
+    "resource_type": "database"
   },
   {
     "id": 82,
@@ -1063,7 +1144,8 @@
     "data_type": "",
     "category": "medical",
     "category_name": "医学生物学",
-    "short_description_zh": "Post-translational modifications linked to 疾病"
+    "short_description_zh": "Post-translational modifications linked to 疾病",
+    "resource_type": "database"
   },
   {
     "id": 83,
@@ -1076,6 +1158,1015 @@
     "data_type": "",
     "category": "tools",
     "category_name": "生物信息工具",
-    "short_description_zh": "Bioimaging data"
+    "short_description_zh": "Bioimaging data",
+    "resource_type": "database"
+  },
+  {
+    "id": 84,
+    "name": "AllergyPred",
+    "url": "https://allergypred.charite.de/AllergyPred/",
+    "short_description": "Allergen prediction",
+    "description": "Allergen prediction",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Allergen 预测"
+  },
+  {
+    "id": 85,
+    "name": "CellHit",
+    "url": "https://cellhit.bioinfolab.sns.it/",
+    "short_description": "Predicting and analyzing patients’ drug responsiveness",
+    "description": "Predicting and analyzing patients’ drug responsiveness",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "medical",
+    "category_name": "医学生物学",
+    "short_description_zh": "Predicting and analyzing pa联系nts’ 药物 反应性"
+  },
+  {
+    "id": 86,
+    "name": "GEPIA3",
+    "url": "https://gepia3.bioinfoliu.com/",
+    "short_description": "Drug sensitivity and interaction network analysis for cancer research",
+    "description": "Drug sensitivity and interaction network analysis for cancer research",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "medical",
+    "category_name": "医学生物学",
+    "short_description_zh": "药物 敏感性 and 相互作用 网络 分析 for 癌症 re搜索"
+  },
+  {
+    "id": 87,
+    "name": "HAb-Convergent",
+    "url": "https://nmdc.cn/zoe/",
+    "short_description": "Antibody engineering",
+    "description": "Antibody engineering",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Anti体 engineering"
+  },
+  {
+    "id": 88,
+    "name": "Onkopus",
+    "url": "https://mtb.bioinf.med.uni-goettingen.de/onkopus",
+    "short_description": "Biological and clinical interpretation of DNA variants in cancer",
+    "description": "Biological and clinical interpretation of DNA variants in cancer",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "生物学 and 临床 解释 of DNA 变异s in 癌症"
+  },
+  {
+    "id": 89,
+    "name": "TIMER3",
+    "url": "https://compbio.cn/timer3/",
+    "short_description": "Tumor immune analysis",
+    "description": "Tumor immune analysis",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Tumor immune 分析"
+  },
+  {
+    "id": 90,
+    "name": "BEscreen",
+    "url": "https://bescreen.ostendorflab.org/",
+    "short_description": "Toolkit to design base editing libraries",
+    "description": "Toolkit to design base editing libraries",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "工具kit to 设计 基础 editing libraries"
+  },
+  {
+    "id": 91,
+    "name": "CRISPR-BEasy",
+    "url": "https://crispr-beasy.cerc-genomic-medicine.ca/",
+    "short_description": "Designing sgRNA tiling libraries for base editing screens",
+    "description": "Designing sgRNA tiling libraries for base editing screens",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "设计ing sgRNA tiling libraries for 基础 editing 筛s"
+  },
+  {
+    "id": 92,
+    "name": "Cas-OFFinder",
+    "url": "https://crispr.pnucolab.com/",
+    "short_description": "Variant-aware identification of off-target site for genome editing",
+    "description": "Variant-aware identification of off-target site for genome editing",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "变异-aware 鉴定 of off-靶点 位点 for 基因组 editing"
+  },
+  {
+    "id": 93,
+    "name": "Diffdigester.uni-jena.de",
+    "url": "https://diffdigester.uni-jena.de/",
+    "short_description": "Selecting restriction enzymes for plasmid identification",
+    "description": "Selecting restriction enzymes for plasmid identification",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Selecting REST接口rict离子 酶s for plasmid 鉴定"
+  },
+  {
+    "id": 94,
+    "name": "IVA Prime",
+    "url": "https://ivaprime.com",
+    "short_description": "Primer design for in vivo assembly cloning",
+    "description": "Primer design for in vivo assembly cloning",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Primer 设计 for in vivo 装配 cloning"
+  },
+  {
+    "id": 95,
+    "name": "AmrProfiler",
+    "url": "https://dianalab.e-ce.uth.gr/amrprofiler",
+    "short_description": "Identifying antimicrobial resistance genes and mutations across species",
+    "description": "Identifying antimicrobial resistance genes and mutations across species",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Identifying anti微bial 抗性 基因s and 突变s across 物种"
+  },
+  {
+    "id": 96,
+    "name": "AutoMLST2.0",
+    "url": "https://automlst2.cs.uni-tuebingen.de/",
+    "short_description": "Phylogeny and microbial taxonomy",
+    "description": "Phylogeny and microbial taxonomy",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "microbiology",
+    "category_name": "微生物学",
+    "short_description_zh": "系统发育 and 微bial 分类学"
+  },
+  {
+    "id": 97,
+    "name": "BASys2",
+    "url": "https://basys2.ca",
+    "short_description": "Annotation of bacterial genomes",
+    "description": "Annotation of bacterial genomes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "注释 of bacterial 基因组s"
+  },
+  {
+    "id": 98,
+    "name": "Bakta Web",
+    "url": "https://bakta.computational.bio",
+    "short_description": "Annotation of bacterial genomes",
+    "description": "Annotation of bacterial genomes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "注释 of bacterial 基因组s"
+  },
+  {
+    "id": 99,
+    "name": "CapBuild",
+    "url": "https://capbuild.csiro.au/",
+    "short_description": "Capsid engineering for adeno-associated viruses",
+    "description": "Capsid engineering for adeno-associated viruses",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "microbiology",
+    "category_name": "微生物学",
+    "short_description_zh": "Capsid engineering for adeno-associated vir使用s"
+  },
+  {
+    "id": 100,
+    "name": "ClipKIT",
+    "url": "https://clipkit.genomelybio.com/",
+    "short_description": "Trimming of multiple sequence alignments for phylogenetics",
+    "description": "Trimming of multiple sequence alignments for phylogenetics",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Trimming of mul尖端le 序列 比对ments for phylo基因tics"
+  },
+  {
+    "id": 101,
+    "name": "CocoVax",
+    "url": "https://comics.med.sustech.edu.cn/cocovax/",
+    "short_description": "Codon-based de-optimization of viral genes",
+    "description": "Codon-based de-optimization of viral genes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Codon-基础d de-optimizat离子 of viral 基因s"
+  },
+  {
+    "id": 102,
+    "name": "M1CR0B1AL1Z3R 2.0",
+    "url": "https://microbializer.tau.ac.il/",
+    "short_description": "Comparative analysis of bacterial genomes",
+    "description": "Comparative analysis of bacterial genomes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "比较 分析 of bacterial 基因组s"
+  },
+  {
+    "id": 103,
+    "name": "MOBHunter",
+    "url": "https://informatica.utem.cl/mobhunter/",
+    "short_description": "Identification and classification of mobile genetic elements in microbial genomes",
+    "description": "Identification and classification of mobile genetic elements in microbial genomes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "鉴定 and 分类 of mobile 基因tic 元素s in 微bial 基因组s"
+  },
+  {
+    "id": 104,
+    "name": "MetaHiCNet",
+    "url": "https://metahicnet.com",
+    "short_description": "Microbial Hi-C interaction networks",
+    "description": "Microbial Hi-C interaction networks",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "microbiology",
+    "category_name": "微生物学",
+    "short_description_zh": "微bial Hi-C 相互作用 网络s"
+  },
+  {
+    "id": 105,
+    "name": "OriV-Finder",
+    "url": "https://tubic.org/OriV-Finder/",
+    "short_description": "Bacterial plasmid replication origin analysis",
+    "description": "Bacterial plasmid replication origin analysis",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "microbiology",
+    "category_name": "微生物学",
+    "short_description_zh": "Bacterial plasmid 重复 起源 分析"
+  },
+  {
+    "id": 106,
+    "name": "antiSMASH",
+    "url": "https://antismash.secondarymetabolites.org/",
+    "short_description": "Secondary metabolite biosynthetic gene clusters",
+    "description": "Secondary metabolite biosynthetic gene clusters",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "秒ary 代谢物 biosynthetic 基因 簇s"
+  },
+  {
+    "id": 107,
+    "name": "ASOptimizer",
+    "url": "https://asoptimizer.s-core.ai/",
+    "short_description": "Optimizing chemical diversity of antisense oligonucleotides",
+    "description": "Optimizing chemical diversity of antisense oligonucleotides",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Optimizing chemical 多样性 of antisense oligonucleotides"
+  },
+  {
+    "id": 108,
+    "name": "DIGGER 2.0",
+    "url": "https://www.exbio.wzw.tum.de/digger-dev/",
+    "short_description": "Functional impact of differential splicing on human and mouse disorders",
+    "description": "Functional impact of differential splicing on human and mouse disorders",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "medical",
+    "category_name": "医学生物学",
+    "short_description_zh": "功能 影响 of differential splicing on 人类 and mo使用 disorders"
+  },
+  {
+    "id": 109,
+    "name": "MAGNETIC",
+    "url": "https://cospi.iiserpune.ac.in/magnetic/",
+    "short_description": "Find correlations between gene promoters",
+    "description": "Find correlations between gene promoters",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Find 相关s between 基因 启动子s"
+  },
+  {
+    "id": 110,
+    "name": "RNAhub",
+    "url": "https://rnahub.org",
+    "short_description": "Search and align RNA homologs with secondary structure assessment",
+    "description": "Search and align RNA homologs with secondary structure assessment",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "搜索 and 比对 RNA homologs with 秒ary 结构 评估"
+  },
+  {
+    "id": 111,
+    "name": "RRMScorer",
+    "url": "https://bio2byte.be/rrmscorer/",
+    "short_description": "Predicting RNA recognition motifs",
+    "description": "Predicting RNA recognition motifs",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Predicting RNA 识别 模式s"
+  },
+  {
+    "id": 112,
+    "name": "RegRNA 3.0",
+    "url": "http://awi.cuhk.edu.cn/∼RegRNA",
+    "short_description": "Analysis of regulatory RNAs",
+    "description": "Analysis of regulatory RNAs",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "分析 of regulatory RNAs"
+  },
+  {
+    "id": 113,
+    "name": "SIREs 3.0",
+    "url": "https://www.sires-webserver.eu/",
+    "short_description": "Predicting iron-responsive elements",
+    "description": "Predicting iron-responsive elements",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Predicting iron-responsive 元素s"
+  },
+  {
+    "id": 114,
+    "name": "mRNAdesigner",
+    "url": "https://www.biosino.org/mRNAdesigner/",
+    "short_description": "Optimizing mRNA design and protein translation in eukaryotes",
+    "description": "Optimizing mRNA design and protein translation in eukaryotes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Optimizing mRNA 设计 and 蛋白质 翻译 in eukaryotes"
+  },
+  {
+    "id": 115,
+    "name": "AlphaLasso",
+    "url": "https://alphalasso.cent.uw.edu.pl/",
+    "short_description": "Identifying loop and lasso motifs in 3D structures",
+    "description": "Identifying loop and lasso motifs in 3D structures",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Identifying 环 and lasso 模式s in 3D 结构s"
+  },
+  {
+    "id": 116,
+    "name": "BeStSel",
+    "url": "https://bestsel.elte.hu/",
+    "short_description": "Analysis of protein circular dichroism spectra",
+    "description": "Analysis of protein circular dichroism spectra",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "分析 of 蛋白质 circular dichroism spectra"
+  },
+  {
+    "id": 117,
+    "name": "CABS-flex 3.0 web server",
+    "url": "https://lcbio.pl/cabsflex3/",
+    "short_description": "Simulating protein structural flexibility",
+    "description": "Simulating protein structural flexibility",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Simulating 蛋白质 结构 flexibility"
+  },
+  {
+    "id": 118,
+    "name": "CGeNArateWeb",
+    "url": "https://mmb.irbbarcelona.org/webdev/slim/CGeNArate/public/",
+    "short_description": "Atomistic study of chromatin fibers",
+    "description": "Atomistic study of chromatin fibers",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "原子istic 研究 of 染色质 纤维s"
+  },
+  {
+    "id": 119,
+    "name": "Caver Web 2.0",
+    "url": "https://loschmidt.chemi.muni.cz/caverweb/",
+    "short_description": "Analysis of tunnels and ligand transport in proteins",
+    "description": "Analysis of tunnels and ligand transport in proteins",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "分析 of tunnels and ligand 运输 in 蛋白质s"
+  },
+  {
+    "id": 120,
+    "name": "ChiraKit",
+    "url": "https://spc.embl-hamburg.de/app/chirakit",
+    "short_description": "Analysis of circular dichroism spectroscopy data",
+    "description": "Analysis of circular dichroism spectroscopy data",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "分析 of circular dichroism spectroscopy 数据"
+  },
+  {
+    "id": 121,
+    "name": "ClusterONE Web",
+    "url": "https://paccanarolab.org/clusteroneweb/",
+    "short_description": "Discovering and analyzing overlapping protein complexes",
+    "description": "Discovering and analyzing overlapping protein complexes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Dis覆盖物 and analyzing overlapping 蛋白质 复合物es"
+  },
+  {
+    "id": 122,
+    "name": "DEMO-EMol",
+    "url": "https://zhanggroup.org/DEMO-EMol/",
+    "short_description": "Modeling protein–nucleic acid complex structures from cryo-EM",
+    "description": "Modeling protein–nucleic acid complex structures from cryo-EM",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "模型ing 蛋白质–nucleic acid 复合物 结构s from cryo-EM"
+  },
+  {
+    "id": 123,
+    "name": "DeepMolecules",
+    "url": "https://deepmolecules.org",
+    "short_description": "Predicting enzyme and transporter–small molecule interactions",
+    "description": "Predicting enzyme and transporter–small molecule interactions",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Predicting 酶 and 转运体–小 分子 相互作用s"
+  },
+  {
+    "id": 124,
+    "name": "DeepUMQA-X Server",
+    "url": "http://zhanglab-bioinf.com/DeepUMQA-X",
+    "short_description": "Estimation of model accuracy for proteins and protein complexes",
+    "description": "Estimation of model accuracy for proteins and protein complexes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "估计 of 模型 准确性 for 蛋白质s and 蛋白质 复合物es"
+  },
+  {
+    "id": 125,
+    "name": "Dr. Kinase",
+    "url": "http://modinfor.com/drkinase",
+    "short_description": "Predicting the drug-resistance hotspots of protein kinases",
+    "description": "Predicting the drug-resistance hotspots of protein kinases",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Predicting the 药物-抗性 hot点s of 蛋白质 激酶s"
+  },
+  {
+    "id": 126,
+    "name": "E3Docker",
+    "url": "https://e3docker.schanglab.org.cn/",
+    "short_description": "Discovery of potential E3 binders",
+    "description": "Discovery of potential E3 binders",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "发现 of 潜力 E3 binders"
+  },
+  {
+    "id": 127,
+    "name": "FoldScript",
+    "url": "https://foldscript.ibcp.fr/",
+    "short_description": "Analysis of AI-generated 3D protein models",
+    "description": "Analysis of AI-generated 3D protein models",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "分析 of AI-基因率d 3D 蛋白质 模型s"
+  },
+  {
+    "id": 128,
+    "name": "HawkDock 2.0",
+    "url": "http://cadd.zju.edu.cn/hawkdock/",
+    "short_description": "Predict the structures of protein–protein complexes",
+    "description": "Predict the structures of protein–protein complexes",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Predict the 结构s of 蛋白质–蛋白质 复合物es"
+  },
+  {
+    "id": 129,
+    "name": "InDeepNet",
+    "url": "https://indeep-net.gpu.pasteur.cloud/",
+    "short_description": "Predicting functional binding sites in proteins",
+    "description": "Predicting functional binding sites in proteins",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Predicting 功能 结合位点s in 蛋白质s"
+  },
+  {
+    "id": 130,
+    "name": "LIGYSIS-web",
+    "url": "https://www.compbio.dundee.ac.uk/ligysis/",
+    "short_description": "Analysis of protein–ligand binding sites",
+    "description": "Analysis of protein–ligand binding sites",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "分析 of 蛋白质–ligand 结合位点s"
+  },
+  {
+    "id": 131,
+    "name": "MolViewSpec",
+    "url": "https://molstar.org/mol-view-spec/",
+    "short_description": "Describing and sharing molecular visualizations",
+    "description": "Describing and sharing molecular visualizations",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Describing and sharing 分子 可视化s"
+  },
+  {
+    "id": 132,
+    "name": "MultiFOLD2 and ModFOLDdock2",
+    "url": "https://www.reading.ac.uk/bioinf/MultiFOLD/; https://www.reading.ac.uk/bioinf/ModFOLDdock/",
+    "short_description": "Prediction and quality assessment of protein quaternary structure models",
+    "description": "Prediction and quality assessment of protein quaternary structure models",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "预测 and 质量 评估 of 蛋白质 quaternary 结构 模型s"
+  },
+  {
+    "id": 133,
+    "name": "PDBCharges",
+    "url": "https://pdbcharges.biodata.ceitec.cz/",
+    "short_description": "Quantum-mechanical partial atomic charges for PDB structures",
+    "description": "Quantum-mechanical partial atomic charges for PDB structures",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "Quantum-mechanical 部分ial 原子ic charges for PDB 结构s"
+  },
+  {
+    "id": 134,
+    "name": "PLIP",
+    "url": "https://plip-tool.biotec.tu-dresden.de/",
+    "short_description": "Protein–ligand interaction profiles",
+    "description": "Protein–ligand interaction profiles",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "蛋白质–ligand 相互作用 pro文件s"
+  },
+  {
+    "id": 135,
+    "name": "PrankWeb 4",
+    "url": "https://prankweb.cz/",
+    "short_description": "Protein–ligand binding site prediction",
+    "description": "Protein–ligand binding site prediction",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "蛋白质–ligand 结合位点 预测"
+  },
+  {
+    "id": 136,
+    "name": "ProteinsPlus",
+    "url": "https://proteins.plus/",
+    "short_description": "Protein structure mining",
+    "description": "Protein structure mining",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "蛋白质 结构 迷你ng"
+  },
+  {
+    "id": 137,
+    "name": "SHARK",
+    "url": "https://bio-shark.org/",
+    "short_description": "Alignment-free homology assessment for intrinsically disordered proteins",
+    "description": "Alignment-free homology assessment for intrinsically disordered proteins",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "比对ment-free 同源性 评估 for intrinsically disordered 蛋白质s"
+  },
+  {
+    "id": 138,
+    "name": "StructMAn Web",
+    "url": "tools.helmholtz-hips.de/structman",
+    "short_description": "Structural annotation of protein sequences and mutations",
+    "description": "Structural annotation of protein sequences and mutations",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "结构 注释 of 蛋白质 序列s and 突变s"
+  },
+  {
+    "id": 139,
+    "name": "TmDet",
+    "url": "https://tmdet.unitmp.org/",
+    "short_description": "Determining membrane orientation of transmembrane proteins",
+    "description": "Determining membrane orientation of transmembrane proteins",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "De术语ining 膜 方向 of trans膜 蛋白质s"
+  },
+  {
+    "id": 140,
+    "name": "Web-based GTalign",
+    "url": "https://bioinformatics.lt/comer/gtalign",
+    "short_description": "Protein structure alignment",
+    "description": "Protein structure alignment",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "protein",
+    "category_name": "蛋白质",
+    "short_description_zh": "蛋白质 结构 比对ment"
+  },
+  {
+    "id": 141,
+    "name": "BioPortal",
+    "url": "https://bioportal.bioontology.org/",
+    "short_description": "Sharing, searching, and utilizing biomedical ontologies",
+    "description": "Sharing, searching, and utilizing biomedical ontologies",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "medical",
+    "category_name": "医学生物学",
+    "short_description_zh": "Sharing, 搜索ing, and utilizing 生物群落dical ontologies"
+  },
+  {
+    "id": 142,
+    "name": "Cytoscape Web",
+    "url": "https://web.cytoscape.org",
+    "short_description": "The online version of Cytoscape",
+    "description": "The online version of Cytoscape",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "The 在线 版本 of Cytoscape"
+  },
+  {
+    "id": 143,
+    "name": "EBI Search",
+    "url": "https://www.ebi.ac.uk/ebisearch/",
+    "short_description": "API for accessing EBI’s databases",
+    "description": "API for accessing EBI’s databases",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "API接口 for 访问ing EBI’s 数据库s"
+  },
+  {
+    "id": 144,
+    "name": "CORESH",
+    "url": "https://alserglab.wustl.edu/coresh/",
+    "short_description": "Gene signature-based search engine for gene expression datasets",
+    "description": "Gene signature-based search engine for gene expression datasets",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "基因 signature-基础d 搜索 engine for 基因 表达 数据集合s"
+  },
+  {
+    "id": 145,
+    "name": "Heatmapper2",
+    "url": "https://heatmapper2.ca",
+    "short_description": "Heatmapping",
+    "description": "Heatmapping",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "热图ping"
+  },
+  {
+    "id": 146,
+    "name": "LitSense 2.0",
+    "url": "https://www.ncbi.nlm.nih.gov/research/litsense2/",
+    "short_description": "Sentence- and paragraph-level based information retrieval",
+    "description": "Sentence- and paragraph-level based information retrieval",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "句子- and para图形-水平 基础d 信息 retrieval"
+  },
+  {
+    "id": 147,
+    "name": "OntoTiger",
+    "url": "https://bio-computing.hrbmu.edu.cn/OntoTiger",
+    "short_description": "Collection of ontology-based tools",
+    "description": "Collection of ontology-based tools",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "收集 of 本体-基础d 工具s"
+  },
+  {
+    "id": 148,
+    "name": "UniProt REST API",
+    "url": "https://www.uniprot.org/api-documentation",
+    "short_description": "API for accessing UniProt",
+    "description": "API for accessing UniProt",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "API接口 for 访问ing UniProt"
+  },
+  {
+    "id": 149,
+    "name": "WashU Epigenome Browser",
+    "url": "https://epigenomegateway.org/",
+    "short_description": "Epigenomics data browser",
+    "description": "Epigenomics data browser",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Epi基因组s 数据 浏览器"
+  },
+  {
+    "id": 150,
+    "name": "CAMI Benchmarking Portal",
+    "url": "https://cami-challenge.org/submit/",
+    "short_description": "Online evaluation and ranking of metagenomic software",
+    "description": "Online evaluation and ranking of metagenomic software",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "在线 评价 and 等级ing of meta基因组 软件"
+  },
+  {
+    "id": 151,
+    "name": "CausalCCC",
+    "url": "https://miic.curie.fr/causalCCC.php",
+    "short_description": "Exploring intracellular pathways for cell–cell communication",
+    "description": "Exploring intracellular pathways for cell–cell communication",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Exploring intra细胞 通路s for 细胞–细胞 通信"
+  },
+  {
+    "id": 152,
+    "name": "DIGITtally",
+    "url": "https://digittally.org",
+    "short_description": "Drosophila meta-analysis",
+    "description": "Drosophila meta-analysis",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Drosophila meta-分析"
+  },
+  {
+    "id": 153,
+    "name": "L2S2",
+    "url": "https://l2s2.maayanlab.cloud/",
+    "short_description": "Chemical perturbation and knock-out signature search engine",
+    "description": "Chemical perturbation and knock-out signature search engine",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "tools",
+    "category_name": "生物信息工具",
+    "short_description_zh": "Chemical perturbat离子 and knock-out signature 搜索 engine"
+  },
+  {
+    "id": 154,
+    "name": "MMEASE 2.0",
+    "url": "https://idrblab.org/mmease2025/",
+    "short_description": "Single-cell metabolomics",
+    "description": "Single-cell metabolomics",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "omics",
+    "category_name": "组学",
+    "short_description_zh": "单细胞 代谢组s"
+  },
+  {
+    "id": 155,
+    "name": "MSTmap",
+    "url": "https://mstmap.org/",
+    "short_description": "Genetic linkage maps",
+    "description": "Genetic linkage maps",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "website",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "基因tic 链接年龄 maps"
   }
 ]
