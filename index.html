@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生物信息数据库导航 - NAR 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 头部导航 */
+        .header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3d6f 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+
+        .header-stats {
+            text-align: right;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* 搜索区域 */
+        .search-section {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .search-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .search-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2c5aa0;
+        }
+
+        .search-box {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .search-btn:hover {
+            background: #e55a2b;
+        }
+
+        /* 主要内容区域 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 20px;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+        }
+
+        /* 侧边栏筛选 */
+        .sidebar {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar h3 i {
+            margin-right: 8px;
+        }
+
+        .category-filters {
+            list-style: none;
+        }
+
+        .category-filters li {
+            margin-bottom: 0.5rem;
+        }
+
+        .category-filter {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #666;
+        }
+
+        .category-filter:hover {
+            background: #f0f4ff;
+            color: #2c5aa0;
+        }
+
+        .category-filter.active {
+            background: #2c5aa0;
+            color: white;
+        }
+
+        .category-filter i {
+            margin-right: 8px;
+            width: 16px;
+            text-align: center;
+        }
+
+        .category-count {
+            margin-left: auto;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        .active .category-count {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* 数据库网格 */
+        .databases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .database-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .database-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .database-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .database-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+        }
+
+        .database-category {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .database-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            position: relative;
+            cursor: help;
+        }
+
+        .database-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary {
+            background: #2c5aa0;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1e3d6f;
+        }
+
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #666;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background: #ff6b35;
+            color: white;
+            border-color: #ff6b35;
+        }
+
+        /* 工具提示 */
+        .tooltip {
+            position: absolute;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            max-width: 300px;
+            line-height: 1.4;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+        }
+
+        /* 统计信息 */
+        .stats-bar {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stats-info {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 5px;
+        }
+
+        .view-btn {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .view-btn.active {
+            background: #2c5aa0;
+            color: white;
+            border-color: #2c5aa0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .databases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-box {
+                flex-direction: column;
+                border-radius: 10px;
+            }
+
+            .search-btn {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        /* 加载动画 */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+
+        .loading i {
+            font-size: 2rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 隐藏类 */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-dna"></i>
+                <span>生物信息数据库导航</span>
+            </div>
+            <div class="header-stats">
+                <div>NAR 2025 收录</div>
+                <div><strong>73</strong> 个数据库</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 搜索区域 -->
+    <section class="search-section">
+        <div class="search-container">
+            <h1 class="search-title">探索生物信息世界</h1>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="搜索数据库名称或描述..." id="searchInput">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- 侧边栏筛选 -->
+        <aside class="sidebar">
+            <h3><i class="fas fa-filter"></i>按分类筛选</h3>
+            <ul class="category-filters" id="categoryFilters">
+                <li>
+                    <a href="#" class="category-filter active" data-category="all">
+                        <i class="fas fa-globe"></i>
+                        <span>全部数据库</span>
+                        <span class="category-count">73</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- 数据库列表区域 -->
+        <section class="databases-section">
+            <!-- 统计栏 -->
+            <div class="stats-bar">
+                <div class="stats-info" id="statsInfo">
+                    显示全部 73 个数据库
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 数据库网格 -->
+            <div class="databases-grid" id="databasesGrid">
+                <div class="loading">
+                    <i class="fas fa-spinner"></i>
+                    <p>正在加载数据库信息...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 工具提示 -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // 全局变量
+        let allDatabases = [];
+        let filteredDatabases = [];
+        let currentCategory = 'all';
+        let searchTerm = '';
+
+        // 分类图标映射
+        const categoryIcons = {
+            'protein': 'fas fa-atom',
+            'genomics': 'fas fa-dna',
+            'plant': 'fas fa-seedling',
+            'medical': 'fas fa-heartbeat',
+            'microbiology': 'fas fa-bacteria',
+            'evolution': 'fas fa-project-diagram',
+            'omics': 'fas fa-chart-line',
+            'tools': 'fas fa-tools'
+        };
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDatabases();
+            initializeEventListeners();
+        });
+
+        // 加载数据库数据
+        async function loadDatabases() {
+            try {
+                const response = await fetch('databases_processed.json');
+                allDatabases = await response.json();
+                filteredDatabases = [...allDatabases];
+                
+                renderCategoryFilters();
+                renderDatabases();
+            } catch (error) {
+                console.error('加载数据库数据失败:', error);
+                document.getElementById('databasesGrid').innerHTML = 
+                    '<p style="text-align: center; color: #666;">加载数据失败，请刷新页面重试</p>';
+            }
+        }
+
+        // 渲染分类筛选器
+        function renderCategoryFilters() {
+            const categories = {};
+            
+            // 统计各分类数量
+            allDatabases.forEach(db => {
+                if (!categories[db.category]) {
+                    categories[db.category] = {
+                        name: db.category_name,
+                        count: 0
+                    };
+                }
+                categories[db.category].count++;
+            });
+
+            const filtersHTML = Object.entries(categories).map(([key, value]) => `
+                <li>
+                    <a href="#" class="category-filter" data-category="${key}">
+                        <i class="${categoryIcons[key] || 'fas fa-folder'}"></i>
+                        <span>${value.name}</span>
+                        <span class="category-count">${value.count}</span>
+                    </a>
+                </li>
+            `).join('');
+
+            document.getElementById('categoryFilters').innerHTML += filtersHTML;
+        }
+
+        // 渲染数据库卡片
+        function renderDatabases() {
+            const grid = document.getElementById('databasesGrid');
+            
+            if (filteredDatabases.length === 0) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: #666;">
+                        <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i>
+                        <p>没有找到匹配的数据库</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const cardsHTML = filteredDatabases.map(db => `
+                <div class="database-card" data-category="${db.category}">
+                    <div class="database-header">
+                        <div>
+                            <div class="database-name">${db.name}</div>
+                            <div class="database-category">${db.category_name}</div>
+                        </div>
+                    </div>
+                    <div class="database-description" 
+                         data-tooltip="${db.short_description_zh || db.short_description}">
+                        ${db.short_description}
+                    </div>
+                    <div class="database-actions">
+                        <a href="${db.url}" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            访问数据库
+                        </a>
+                        <button class="btn btn-secondary" onclick="toggleFavorite('${db.id}')">
+                            <i class="far fa-heart"></i>
+                            收藏
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            grid.innerHTML = cardsHTML;
+
+            // 更新统计信息
+            updateStatsInfo();
+        }
+
+        // 初始化事件监听器
+        function initializeEventListeners() {
+            // 搜索功能
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+
+            searchInput.addEventListener('input', debounce(handleSearch, 300));
+            searchBtn.addEventListener('click', handleSearch);
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    handleSearch();
+                }
+            });
+
+            // 分类筛选
+            document.getElementById('categoryFilters').addEventListener('click', function(e) {
+                e.preventDefault();
+                if (e.target.closest('.category-filter')) {
+                    const filter = e.target.closest('.category-filter');
+                    const category = filter.dataset.category;
+                    handleCategoryFilter(category, filter);
+                }
+            });
+
+            // 工具提示
+            document.addEventListener('mouseover', handleTooltip);
+            document.addEventListener('mouseout', hideTooltip);
+
+            // 视图切换
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // 这里可以添加列表视图的逻辑
+                });
+            });
+        }
+
+        // 搜索处理
+        function handleSearch() {
+            searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            filterDatabases();
+        }
+
+        // 分类筛选处理
+        function handleCategoryFilter(category, filterElement) {
+            currentCategory = category;
+            
+            // 更新活跃状态
+            document.querySelectorAll('.category-filter').forEach(f => f.classList.remove('active'));
+            filterElement.classList.add('active');
+            
+            filterDatabases();
+        }
+
+        // 过滤数据库
+        function filterDatabases() {
+            filteredDatabases = allDatabases.filter(db => {
+                // 分类过滤
+                const categoryMatch = currentCategory === 'all' || db.category === currentCategory;
+                
+                // 搜索过滤
+                const searchMatch = !searchTerm || 
+                    db.name.toLowerCase().includes(searchTerm) ||
+                    db.short_description.toLowerCase().includes(searchTerm) ||
+                    (db.short_description_zh && db.short_description_zh.includes(searchTerm));
+                
+                return categoryMatch && searchMatch;
+            });
+            
+            renderDatabases();
+        }
+
+        // 更新统计信息
+        function updateStatsInfo() {
+            const statsInfo = document.getElementById('statsInfo');
+            const total = allDatabases.length;
+            const filtered = filteredDatabases.length;
+            
+            if (filtered === total) {
+                statsInfo.textContent = `显示全部 ${total} 个数据库`;
+            } else {
+                statsInfo.textContent = `显示 ${filtered} 个数据库，共 ${total} 个`;
+            }
+        }
+
+        // 工具提示处理
+        function handleTooltip(e) {
+            const element = e.target.closest('[data-tooltip]');
+            if (element) {
+                const tooltip = document.getElementById('tooltip');
+                const text = element.dataset.tooltip;
+                
+                if (text && text !== element.textContent.trim()) {
+                    tooltip.textContent = text;
+                    tooltip.classList.add('show');
+                    
+                    // 定位工具提示
+                    const rect = element.getBoundingClientRect();
+                    tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
+                    tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
+                }
+            }
+        }
+
+        // 隐藏工具提示
+        function hideTooltip() {
+            document.getElementById('tooltip').classList.remove('show');
+        }
+
+        // 收藏功能
+        function toggleFavorite(dbId) {
+            const btn = event.target.closest('.btn-secondary');
+            const icon = btn.querySelector('i');
+            
+            if (icon.classList.contains('far')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                btn.style.background = '#ff6b35';
+                btn.style.color = 'white';
+                btn.style.borderColor = '#ff6b35';
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                btn.style.background = '#f5f5f5';
+                btn.style.color = '#666';
+                btn.style.borderColor = '#ddd';
+            }
+        }
+
+        // 防抖函数
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+</html>
