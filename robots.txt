@@ -12,7 +12,6 @@ Allow: /README.md
 # 禁止访问的文件
 Disallow: /*.py
 Disallow: /*.xlsx
-Disallow: /.*
 Disallow: /~*
 
 # 爬取延迟（可选）

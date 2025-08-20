@@ -12,28 +12,12 @@
         <priority>1.0</priority>
     </url>
     
-    <!-- 数据文件 -->
-    <url>
-        <loc>https://gausshuang.github.io/bioinfo123/databases_processed.json</loc>
-        <lastmod>2025-01-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
     <!-- 关于页面 -->
     <url>
         <loc>https://gausshuang.github.io/bioinfo123/about.html</loc>
         <lastmod>2025-01-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-    </url>
-    
-    <!-- README文档 -->
-    <url>
-        <loc>https://gausshuang.github.io/bioinfo123/README.md</loc>
-        <lastmod>2025-01-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
     </url>
     
 </urlset>
