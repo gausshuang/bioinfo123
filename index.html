@@ -361,18 +361,21 @@
 
         /* 工具提示 */
         .tooltip {
-            position: absolute;
-            background: #333;
+            position: fixed;
+            background: rgba(51, 51, 51, 0.95);
             color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            z-index: 1000;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            z-index: 10000;
             opacity: 0;
             pointer-events: none;
-            transition: opacity 0.3s;
-            max-width: 300px;
-            line-height: 1.4;
+            transition: opacity 0.2s ease;
+            max-width: 320px;
+            line-height: 1.5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px);
+            word-wrap: break-word;
         }
 
         .tooltip.show {
@@ -383,10 +386,9 @@
             content: '';
             position: absolute;
             top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border: 5px solid transparent;
-            border-top-color: #333;
+            left: 20px;
+            border: 6px solid transparent;
+            border-top-color: rgba(51, 51, 51, 0.95);
         }
 
         /* 统计信息 */
@@ -787,6 +789,7 @@
             // 工具提示
             document.addEventListener('mouseover', handleTooltip);
             document.addEventListener('mouseout', hideTooltip);
+            document.addEventListener('mousemove', updateTooltipPosition);
 
             // 视图切换
             document.querySelectorAll('.view-btn').forEach(btn => {
@@ -867,27 +870,85 @@
             }
         }
 
+        // 全局变量存储当前tooltip状态
+        let currentTooltipElement = null;
+        let mouseX = 0;
+        let mouseY = 0;
+
         // 工具提示处理
         function handleTooltip(e) {
             const element = e.target.closest('[data-tooltip]');
+            const tooltip = document.getElementById('tooltip');
+            
             if (element) {
-                const tooltip = document.getElementById('tooltip');
                 const text = element.dataset.tooltip;
                 
-                if (text && text !== element.textContent.trim()) {
+                if (text && text !== element.textContent.trim() && text !== 'undefined') {
+                    currentTooltipElement = element;
                     tooltip.textContent = text;
                     tooltip.classList.add('show');
                     
+                    // 更新鼠标位置
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                    
                     // 定位工具提示
-                    const rect = element.getBoundingClientRect();
-                    tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-                    tooltip.style.top = rect.top - tooltip.offsetHeight - 10 + 'px';
+                    positionTooltip(tooltip, mouseX, mouseY);
+                }
+            } else {
+                hideTooltip();
+            }
+        }
+
+        // 更新工具提示位置（跟随鼠标）
+        function updateTooltipPosition(e) {
+            if (currentTooltipElement) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                const tooltip = document.getElementById('tooltip');
+                if (tooltip.classList.contains('show')) {
+                    positionTooltip(tooltip, mouseX, mouseY);
                 }
             }
         }
 
+        // 定位工具提示
+        function positionTooltip(tooltip, x, y) {
+            const tooltipRect = tooltip.getBoundingClientRect();
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            
+            let left = x + 15; // 鼠标右侧15px
+            let top = y - tooltipRect.height - 10; // 鼠标上方10px
+            
+            // 防止超出右边界
+            if (left + tooltipRect.width > windowWidth - 20) {
+                left = x - tooltipRect.width - 15; // 显示在鼠标左侧
+            }
+            
+            // 防止超出上边界
+            if (top < 20) {
+                top = y + 15; // 显示在鼠标下方
+            }
+            
+            // 防止超出下边界
+            if (top + tooltipRect.height > windowHeight - 20) {
+                top = windowHeight - tooltipRect.height - 20;
+            }
+            
+            // 防止超出左边界
+            if (left < 20) {
+                left = 20;
+            }
+            
+            tooltip.style.left = left + 'px';
+            tooltip.style.top = top + 'px';
+        }
+
         // 隐藏工具提示
         function hideTooltip() {
+            currentTooltipElement = null;
             document.getElementById('tooltip').classList.remove('show');
         }
 
