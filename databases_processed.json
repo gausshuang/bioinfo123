@@ -5892,5 +5892,19 @@
     "category": "tools",
     "category_name": "生物信息工具",
     "short_description_zh": "Sulfatase families"
+  },
+  {
+    "id": 422,
+    "name": "ABC Portal",
+    "url": "http://abc.sklehabc.com",
+    "short_description": "Single cell transcriptomics of blood cells",
+    "description": "Single cell transcriptomics of blood cells",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "database",
+    "resource_type": "database",
+    "category": "omics",
+    "category_name": "组学",
+    "short_description_zh": "Single cell transcriptomics of blood cells"
   }
 ]
