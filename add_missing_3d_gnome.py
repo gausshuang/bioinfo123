@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-读取nar2025web.xlsx第74-154行的81个新web网站并与现有数据合并
+添加遗漏的第73行数据：3D-GNOME 3.0
 """
 import pandas as pd
 import json
@@ -65,30 +65,11 @@ EXTENDED_TRANSLATIONS = {
     'pharmacology': '药理学', 'clinical trial': '临床试验',
     'epidemiology': '流行病学', 'public health': '公共卫生',
     'personalized medicine': '个性化医疗', 'precision medicine': '精准医疗',
-    # 新增特殊术语
-    'antimicrobial': '抗菌', 'peptide': '肽', 'resistance': '抗性', 'susceptibility': '敏感性',
-    'virulence': '毒力', 'pathogenicity': '致病性', 'host': '宿主', 'parasite': '寄生虫',
-    'vector': '载体', 'epidemiology': '流行病学', 'surveillance': '监测',
-    'outbreak': '暴发', 'pandemic': '大流行', 'endemic': '地方性流行',
-    'zoonotic': '人畜共患', 'infectious': '感染性', 'contagious': '传染性',
-    'immunology': '免疫学', 'vaccine': '疫苗', 'antibody': '抗体', 'antigen': '抗原',
-    'epitope': '表位', 'immune': '免疫', 'allergy': '过敏', 'autoimmune': '自身免疫',
-    'transplantation': '移植', 'rejection': '排斥', 'tolerance': '耐受',
-    'stem cell': '干细胞', 'differentiation': '分化', 'development': '发育',
-    'embryonic': '胚胎', 'adult': '成体', 'pluripotent': '多能性', 'totipotent': '全能性',
-    'regeneration': '再生', 'repair': '修复', 'wound': '伤口', 'healing': '愈合',
-    'aging': '衰老', 'senescence': '衰老', 'longevity': '长寿', 'lifespan': '寿命',
-    'circadian': '昼夜节律', 'rhythm': '节律', 'sleep': '睡眠', 'wake': '觉醒',
-    'behavior': '行为', 'cognition': '认知', 'memory': '记忆', 'learning': '学习',
-    'neuroscience': '神经科学', 'brain': '大脑', 'neuron': '神经元', 'synapse': '突触',
-    'neurotransmitter': '神经递质', 'hormone': '激素', 'endocrine': '内分泌',
-    'metabolism': '代谢', 'enzyme': '酶', 'kinase': '激酶', 'phosphatase': '磷酸酶',
-    'signaling': '信号传导', 'cascade': '级联', 'feedback': '反馈', 'homeostasis': '稳态',
-    # Web工具相关术语
-    'webserver': '网络服务器', 'web server': '网络服务器', 'online tool': '在线工具',
-    'web tool': '网络工具', 'web-based': '基于网络的', 'interactive': '交互式',
-    'user-friendly': '用户友好', 'graphical': '图形化', 'interface': '界面',
-    'dashboard': '仪表板', 'visualization': '可视化', 'plot': '绘图', 'chart': '图表'
+    # 3D基因组相关术语
+    '3d': '三维', 'three-dimensional': '三维', 'spatial': '空间', 'chromatin': '染色质',
+    'chromosome': '染色体', 'topology': '拓扑', 'conformation': '构象', 'folding': '折叠',
+    'compartment': '区室', 'domain': '结构域', 'loop': '环', 'boundary': '边界',
+    'insulator': '绝缘子', 'enhancer': '增强子', 'promoter': '启动子', 'tad': 'TAD结构域'
 }
 
 # 分类规则
@@ -99,7 +80,7 @@ UPDATED_CATEGORIES = {
     },
     'genomics': {
         'name': '基因组学',
-        'keywords': ['genome', 'genomic', 'gene', 'genetic', 'dna', 'sequence', 'chromosome', 'variant', 'mutation', 'gwas', 'snp', 'indel', 'cnv', 'structural variant']
+        'keywords': ['genome', 'genomic', 'gene', 'genetic', 'dna', 'sequence', 'chromosome', 'variant', 'mutation', 'gwas', 'snp', 'indel', 'cnv', 'structural variant', '3d', 'chromatin', 'chromosome', 'topology']
     },
     'plant': {
         'name': '植物生物学',
@@ -182,45 +163,48 @@ def translate_description(description):
     # 否则返回原文
     return description
 
-def read_81_new_web_sites():
-    """读取nar2025web.xlsx第74-154行的81个新web网站并与现有数据合并"""
+def add_missing_3d_gnome():
+    """添加遗漏的第73行数据：3D-GNOME 3.0"""
     try:
         # 读取Excel文件
         df = pd.read_excel('nar2025web.xlsx')
         
-        print("Excel文件的列名:")
-        print(df.columns.tolist())
-        print(f"\nExcel数据形状: {df.shape}")
-        
-        # 提取第74-154行（Excel行号），对应Python索引73-153
-        df_new = df.iloc[73:154].copy()  # 提取81行数据
-        
-        print(f"\n提取的新数据形状: {df_new.shape}")
-        print("\n前5行新数据:")
-        print(df_new.head())
+        print("检查第73行数据:")
+        row73_data = df.iloc[72]  # Excel第73行 = Python索引72
+        print(f"Database name: {row73_data['Database name']}")
+        print(f"URL: {row73_data['URL']}")
+        print(f"Short description: {row73_data['Short description']}")
         
         # 读取现有数据
         with open('databases_processed.json', 'r', encoding='utf-8') as f:
             existing_data = json.load(f)
         
-        print(f"\n现有数据数量: {len(existing_data)}")
+        print(f"\n当前数据库总数: {len(existing_data)}")
         
-        # 处理新web网站
-        new_websites = []
-        start_id = len(existing_data) + 1
+        # 检查第73行数据是否已存在
+        row73_name = str(row73_data['Database name'])
+        exists = False
+        for db in existing_data:
+            if db['name'] == row73_name:
+                exists = True
+                print(f"第73行工具 '{row73_name}' 已存在，ID: {db['id']}")
+                break
         
-        for index, row in df_new.iterrows():
+        if not exists:
+            print(f"第73行工具 '{row73_name}' 不存在，需要添加")
+            
             # 处理Database name列的特殊格式
-            original_name = row.get('Database name', '')
+            original_name = row73_data['Database name']
             processed_name, extracted_description = process_database_name(original_name)
             
             # 如果有从name中提取的描述，使用它；否则使用原有的Short description
-            final_description = extracted_description if extracted_description else str(row.get('Short description', ''))
+            final_description = extracted_description if extracted_description else str(row73_data['Short description'])
             
-            web_info = {
-                'id': start_id + len(new_websites),
+            # 创建新的Web工具条目
+            new_tool = {
+                'id': len(existing_data) + 1,
                 'name': processed_name,
-                'url': str(row.get('URL', '')),
+                'url': str(row73_data['URL']),
                 'short_description': final_description,
                 'description': final_description,
                 'last_update': '',
@@ -230,71 +214,39 @@ def read_81_new_web_sites():
             }
             
             # 添加分类
-            category = categorize_database(web_info['name'], web_info['short_description'])
-            web_info['category'] = category
-            web_info['category_name'] = UPDATED_CATEGORIES[category]['name']
+            category = categorize_database(new_tool['name'], new_tool['short_description'])
+            new_tool['category'] = category
+            new_tool['category_name'] = UPDATED_CATEGORIES[category]['name']
             
             # 添加中文翻译
-            web_info['short_description_zh'] = translate_description(web_info['short_description'])
+            new_tool['short_description_zh'] = translate_description(new_tool['short_description'])
             
-            new_websites.append(web_info)
+            # 添加到数据中
+            existing_data.append(new_tool)
             
-            # 显示处理结果（前几个）
-            if len(new_websites) <= 5:
-                print(f"\n处理第{len(new_websites)}个网站:")
-                print(f"  原始名称: {original_name}")
-                print(f"  处理后名称: {processed_name}")
-                print(f"  提取的描述: {extracted_description}")
-                print(f"  最终描述: {final_description}")
-                print(f"  中文翻译: {web_info['short_description_zh']}")
-                print(f"  分类: {web_info['category_name']}")
-        
-        # 合并数据
-        all_resources = existing_data + new_websites
-        
-        # 保存合并后的数据
-        with open('databases_processed.json', 'w', encoding='utf-8') as f:
-            json.dump(all_resources, f, ensure_ascii=False, indent=2)
-        
-        print(f"\n成功添加了 {len(new_websites)} 个新web网站")
-        print(f"总资源数量: {len(all_resources)}")
-        
-        # 统计分类和类型
-        category_stats = {}
-        db_stats = {}
-        web_stats = {}
-        
-        for resource in all_resources:
-            cat = resource['category']
-            res_type = resource.get('resource_type', 'database')
+            # 保存更新后的数据
+            with open('databases_processed.json', 'w', encoding='utf-8') as f:
+                json.dump(existing_data, f, ensure_ascii=False, indent=2)
             
-            if cat not in category_stats:
-                category_stats[cat] = 0
-                db_stats[cat] = 0
-                web_stats[cat] = 0
+            print(f"\n成功添加第73行Web工具:")
+            print(f"  原始名称: {original_name}")
+            print(f"  处理后名称: {processed_name}")
+            print(f"  提取的描述: {extracted_description}")
+            print(f"  最终描述: {final_description}")
+            print(f"  中文翻译: {new_tool['short_description_zh']}")
+            print(f"  分类: {new_tool['category_name']}")
+            print(f"  新的总数: {len(existing_data)}")
             
-            category_stats[cat] += 1
-            if res_type == 'database':
-                db_stats[cat] += 1
-            else:
-                web_stats[cat] += 1
-        
-        print("\n更新后的资源分类统计:")
-        for cat, count in category_stats.items():
-            print(f"  {UPDATED_CATEGORIES[cat]['name']}: {count}个 (数据库: {db_stats[cat]}, 网站: {web_stats[cat]})")
-        
-        # 统计总数
-        total_databases = sum(db_stats.values())
-        total_websites = sum(web_stats.values())
-        print(f"\n总计: {len(all_resources)}个资源 (数据库: {total_databases}, 网站: {total_websites})")
-        
-        return all_resources
-        
+            return True
+        else:
+            print("第73行Web工具已存在，无需添加")
+            return False
+            
     except Exception as e:
-        print(f"处理新web网站数据时出错: {e}")
+        print(f"添加第73行Web工具时出错: {e}")
         import traceback
         traceback.print_exc()
-        return []
+        return False
 
 if __name__ == "__main__":
-    resources = read_81_new_web_sites()
+    add_missing_3d_gnome()

@@ -7026,5 +7026,19 @@
     "category": "protein",
     "category_name": "蛋白质",
     "short_description_zh": "Explore quadruplexes in nucleic acid 3D structures"
+  },
+  {
+    "id": 503,
+    "name": "3D-GNOME 3.0",
+    "url": "https://3dgnome.mini.pw.edu.pl/",
+    "short_description": "Analyse 3D genome organization",
+    "description": "Analyse 3D genome organization",
+    "last_update": "",
+    "access": "Free",
+    "data_type": "web",
+    "resource_type": "web",
+    "category": "genomics",
+    "category_name": "基因组学",
+    "short_description_zh": "Analyse 三维 基因组 organization"
   }
 ]
