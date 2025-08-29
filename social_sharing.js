@@ -336,3 +336,4 @@ if (document.readyState === 'loading') {
 
 // 导出类供其他脚本使用
 window.SocialSharing = SocialSharing;
+

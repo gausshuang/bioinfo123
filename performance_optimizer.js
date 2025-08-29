@@ -12,6 +12,11 @@ class PerformanceOptimizer {
     }
     
     init() {
+        // 初始化全局变量
+        window.currentCategory = window.currentCategory || 'all';
+        window.currentType = window.currentType || 'all';
+        window.searchTerm = window.searchTerm || '';
+        
         this.optimizeDataLoading();
         this.setupLazyLoading();
         this.optimizeSearch();
@@ -64,7 +69,11 @@ class PerformanceOptimizer {
                 this.renderInBatches(window.allDatabases);
                 
                 // 渲染分类筛选器
-                renderCategoryFilters();
+                if (typeof renderCategoryFilters === 'function') {
+                    renderCategoryFilters();
+                } else {
+                    this.renderCategoryFilters();
+                }
                 
             } catch (error) {
                 console.error('优化加载数据库数据失败:', error);
@@ -160,10 +169,60 @@ class PerformanceOptimizer {
         return card;
     }
     
+    // 渲染分类筛选器
+    renderCategoryFilters() {
+        const categoryIcons = {
+            'protein': 'fas fa-atom',
+            'genomics': 'fas fa-dna',
+            'plant': 'fas fa-seedling',
+            'medical': 'fas fa-heartbeat',
+            'microbiology': 'fas fa-bacteria',
+            'evolution': 'fas fa-project-diagram',
+            'omics': 'fas fa-chart-line',
+            'tools': 'fas fa-tools'
+        };
+        
+        const categories = {};
+        
+        // 统计各分类数量
+        window.allDatabases.forEach(db => {
+            if (!categories[db.category]) {
+                categories[db.category] = {
+                    name: db.category_name,
+                    count: 0
+                };
+            }
+            categories[db.category].count++;
+        });
+
+        const filtersHTML = Object.entries(categories).map(([key, value]) => `
+            <li>
+                <a href="#" class="category-filter" data-category="${key}">
+                    <i class="${categoryIcons[key] || 'fas fa-folder'}"></i>
+                    <span>${value.name}</span>
+                    <span class="category-count">${value.count}</span>
+                </a>
+            </li>
+        `).join('');
+
+        // 保留"全部资源"选项，添加其他分类
+        const categoryFiltersContainer = document.getElementById('categoryFilters');
+        if (categoryFiltersContainer) {
+            const allResourcesItem = categoryFiltersContainer.querySelector('li');
+            categoryFiltersContainer.innerHTML = '';
+            if (allResourcesItem) {
+                categoryFiltersContainer.appendChild(allResourcesItem);
+            }
+            categoryFiltersContainer.insertAdjacentHTML('beforeend', filtersHTML);
+        }
+    }
+    
     // 渲染完成后的处理
     onRenderComplete() {
         // 更新统计信息
-        updateStatsInfo();
+        if (typeof updateStatsInfo === 'function') {
+            updateStatsInfo();
+        }
         
         // 设置懒加载
         this.setupImageLazyLoading();
@@ -215,20 +274,38 @@ class PerformanceOptimizer {
         
         window.handleSearch = this.debounce(() => {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            window.searchTerm = searchTerm;
             
-            if (searchTerm.length === 0) {
-                window.filteredDatabases = [...window.allDatabases];
-            } else {
-                // 使用预计算的搜索文本
-                window.filteredDatabases = window.allDatabases.filter(db => 
-                    db._searchText.includes(searchTerm)
-                );
-            }
-            
-            // 批量重新渲染
-            this.renderInBatches(window.filteredDatabases);
+            // 重新过滤数据
+            this.filterDatabases();
             
         }, this.debounceDelay);
+        
+        // 重写过滤函数
+        window.filterDatabases = this.filterDatabases.bind(this);
+    }
+    
+    // 过滤数据库
+    filterDatabases() {
+        window.filteredDatabases = window.allDatabases.filter(db => {
+            // 分类过滤
+            const categoryMatch = window.currentCategory === 'all' || db.category === window.currentCategory;
+            
+            // 类型过滤
+            const resourceType = db.resource_type || 'database';
+            const typeMatch = window.currentType === 'all' || 
+                (window.currentType === 'database' && resourceType === 'database') ||
+                (window.currentType === 'web' && resourceType === 'web');
+            
+            // 搜索过滤
+            const searchMatch = !window.searchTerm || 
+                db._searchText.includes(window.searchTerm);
+            
+            return categoryMatch && typeMatch && searchMatch;
+        });
+        
+        // 批量重新渲染
+        this.renderInBatches(window.filteredDatabases);
     }
     
     // 设置虚拟滚动（对于大量数据）
@@ -379,3 +456,4 @@ if (document.readyState === 'loading') {
 
 // 导出类
 window.PerformanceOptimizer = PerformanceOptimizer;
+

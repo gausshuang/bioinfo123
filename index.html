@@ -507,6 +507,7 @@
     <script src="accessibility_enhancer.js" defer></script>
     <script src="social_sharing.js" defer></script>
     <script src="setup_analytics.js" defer></script>
+    <script src="fix_filters.js" defer></script>
     
     <!-- Google Analytics 4 配置 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -680,6 +681,13 @@
         let currentCategory = 'all';
         let currentType = 'all';
         let searchTerm = '';
+        
+        // 确保全局变量可被性能优化脚本访问
+        window.allDatabases = allDatabases;
+        window.filteredDatabases = filteredDatabases;
+        window.currentCategory = currentCategory;
+        window.currentType = currentType;
+        window.searchTerm = searchTerm;
 
         // 分类图标映射
         const categoryIcons = {
@@ -740,7 +748,12 @@
                 </li>
             `).join('');
 
-            document.getElementById('categoryFilters').innerHTML += filtersHTML;
+            // 保留"全部资源"选项，添加其他分类
+            const categoryFiltersContainer = document.getElementById('categoryFilters');
+            const allResourcesItem = categoryFiltersContainer.querySelector('li');
+            categoryFiltersContainer.innerHTML = '';
+            categoryFiltersContainer.appendChild(allResourcesItem);
+            categoryFiltersContainer.insertAdjacentHTML('beforeend', filtersHTML);
         }
 
         // 渲染数据库卡片
@@ -849,12 +862,14 @@
         // 搜索处理
         function handleSearch() {
             searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+            window.searchTerm = searchTerm;
             filterDatabases();
         }
 
         // 分类筛选处理
         function handleCategoryFilter(category, filterElement) {
             currentCategory = category;
+            window.currentCategory = category;
             
             // 更新活跃状态
             document.querySelectorAll('#categoryFilters .category-filter').forEach(f => f.classList.remove('active'));
@@ -866,6 +881,7 @@
         // 类型筛选处理
         function handleTypeFilter(type, filterElement) {
             currentType = type;
+            window.currentType = type;
             
             // 更新活跃状态
             document.querySelectorAll('#typeFilters .category-filter').forEach(f => f.classList.remove('active'));

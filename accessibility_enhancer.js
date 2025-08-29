@@ -435,3 +435,4 @@ if (document.readyState === 'loading') {
 
 // 导出类
 window.AccessibilityEnhancer = AccessibilityEnhancer;
+

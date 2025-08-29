@@ -107,3 +107,4 @@ window.BioinfoNavAnalytics = {
     setup: setupGoogleAnalytics,
     measurementId: GA_MEASUREMENT_ID
 };
+
