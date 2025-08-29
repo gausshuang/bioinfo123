@@ -7,7 +7,7 @@
     <!-- 主页 - 生物信息资源导航 -->
     <url>
         <loc>https://gausshuang.github.io/bioinfo123/</loc>
-        <lastmod>2025-08-27T12:00:00+08:00</lastmod>
+        <lastmod>2025-01-21T12:00:00+08:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +15,7 @@
     <!-- 主页 - 带index.html -->
     <url>
         <loc>https://gausshuang.github.io/bioinfo123/index.html</loc>
-        <lastmod>2025-08-27T12:00:00+08:00</lastmod>
+        <lastmod>2025-01-21T12:00:00+08:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- 关于页面 -->
     <url>
         <loc>https://gausshuang.github.io/bioinfo123/about.html</loc>
-        <lastmod>2025-08-27T12:00:00+08:00</lastmod>
+        <lastmod>2025-01-21T12:00:00+08:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -31,7 +31,7 @@
     <!-- 数据API -->
     <url>
         <loc>https://gausshuang.github.io/bioinfo123/databases_processed.json</loc>
-        <lastmod>2025-08-27T12:00:00+08:00</lastmod>
+        <lastmod>2025-01-21T12:00:00+08:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
