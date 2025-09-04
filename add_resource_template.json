@@ -1,0 +1,17 @@
+{
+  "instructions": "使用此模板快速添加新资源",
+  "new_resource_template": {
+    "id": "auto_generated",
+    "name": "数据库或工具名称",
+    "url": "https://example.com",
+    "short_description": "简短描述",
+    "short_description_zh": "中文翻译",
+    "category": "genomics/protein/medical等",
+    "category_name": "对应中文分类名",
+    "resource_type": "database或web",
+    "access": "Free/Paid/Registration",
+    "last_update": "YYYY-MM-DD",
+    "source_file": "来源文件",
+    "added_date": "YYYY-MM-DD"
+  }
+}
