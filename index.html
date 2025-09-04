@@ -646,16 +646,17 @@
         let searchTerm = '';
 
 
-        // 分类图标映射
+        // 分类图标映射（9个分类）
         const categoryIcons = {
-            'protein': 'fas fa-atom',
             'genomics': 'fas fa-dna',
-            'plant': 'fas fa-seedling',
+            'tools': 'fas fa-tools',
+            'protein': 'fas fa-atom',
             'medical': 'fas fa-heartbeat',
-            'microbiology': 'fas fa-bacteria',
-            'evolution': 'fas fa-project-diagram',
+            'plant': 'fas fa-seedling',
             'omics': 'fas fa-chart-line',
-            'tools': 'fas fa-tools'
+            'evolution': 'fas fa-project-diagram',
+            'microbiology': 'fas fa-bacteria',
+            'other': 'fas fa-folder'
         };
 
         // 页面加载完成后初始化
@@ -695,15 +696,23 @@
                 categories[db.category].count++;
             });
 
-            const filtersHTML = Object.entries(categories).map(([key, value]) => `
-                <li>
-                    <a href="#" class="category-filter" data-category="${key}">
-                        <i class="${categoryIcons[key] || 'fas fa-folder'}"></i>
-                        <span>${value.name}</span>
-                        <span class="category-count">${value.count}</span>
-                    </a>
-                </li>
-            `).join('');
+            // 按指定顺序显示分类
+            const categoryOrder = ['genomics', 'tools', 'protein', 'medical', 'plant', 'omics', 'evolution', 'microbiology', 'other'];
+            
+            const filtersHTML = categoryOrder
+                .filter(key => categories[key]) // 只显示存在的分类
+                .map(key => {
+                    const category = categories[key];
+                    return `
+                        <li>
+                            <a href="#" class="category-filter" data-category="${key}">
+                                <i class="${categoryIcons[key] || 'fas fa-folder'}"></i>
+                                <span>${category.name}</span>
+                                <span class="category-count">${category.count}</span>
+                            </a>
+                        </li>
+                    `;
+                }).join('');
 
             // 保留"全部资源"选项，添加其他分类
             const categoryFiltersContainer = document.getElementById('categoryFilters');
@@ -867,6 +876,9 @@
                 
                 return categoryMatch && typeMatch && searchMatch;
             });
+            
+            // 按英文字母排序
+            filteredDatabases.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
             
             renderDatabases();
         }
